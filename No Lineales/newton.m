@@ -11,8 +11,8 @@ i = 1;
 while i <= n
     p = p0-(f(p0)/fp(p0));
     if abs(p-p0) < tol
-        double(p)
-        %break;
+        disp(['iteracion ', num2str(i), ': ', num2str(double(p))])
+        break;
     end
     i = i+1;
     p0=p;
