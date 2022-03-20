@@ -16,7 +16,8 @@ else
     while i <= n
         p=p1-(q1*(p1-p0)/(q1-q0));
         if abs(p-p1) < tol
-            double(p)
+            disp(['iteracion ', num2str(i), ': ', num2str(double(p))])
+            break;
         end
         i=i+1;
         p0=p1;
